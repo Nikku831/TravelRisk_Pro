@@ -46,30 +46,7 @@ const routes: RouteOption[] = [
   },
 ];
 
-const routeCoords: { [key: string]: [number, number][] } = {
-  '1': [  // Interstate Route (I-95)
-    [40.7128, -74.0060],  // New York
-    [41.0, -73.8],
-    [41.5, -72.8],
-    [42.0, -71.5],
-    [42.3601, -71.0589],  // Boston
-  ],
-  '2': [  // Scenic Coastal Route
-    [40.7128, -74.0060],
-    [40.9, -73.5],
-    [41.2, -71.8],
-    [41.6, -70.9],
-    [42.0, -70.8],
-    [42.3601, -71.0589],
-  ],
-  '3': [  // Mountain Pass Route
-    [40.7128, -74.0060],
-    [41.2, -73.2],
-    [41.7, -72.6],
-    [42.1, -72.4],
-    [42.3601, -71.0589],
-  ],
-};
+
 
 function interpolate(start: [number, number], end: [number, number], t: number): [number, number] {
   return [
