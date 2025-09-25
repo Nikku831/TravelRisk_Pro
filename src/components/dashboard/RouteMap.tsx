@@ -71,8 +71,6 @@ const routeCoords: { [key: string]: [number, number][] } = {
   ],
 };
 
-const getRouteCoords = (id: string) => routeCoords[id] || [];
-
 function interpolate(start: [number, number], end: [number, number], t: number): [number, number] {
   return [
     start[0] + (end[0] - start[0]) * t,
